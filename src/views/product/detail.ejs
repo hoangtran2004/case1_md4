@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile shop</title>
+    <%- include ('../partial/style') %>
+</head>
+<body>
+<%- include ('../partial/nav-bar') %>
+
+<div class="promo-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo1">
+                    <i class="fa fa-refresh"></i>
+                    <p>30 Days return</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo2">
+                    <i class="fa fa-truck"></i>
+                    <p>Free shipping</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo3">
+                    <i class="fa fa-lock"></i>
+                    <p>Secure payments</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo4">
+                    <i class="fa fa-gift"></i>
+                    <p>New products</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End promo area -->
+<div class="single-product-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="product-content-right">
+                    <div class="product-breadcroumb">
+                        <a href="/products">Home</a>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="product-images">
+                                <div class="product-main-img">
+                                    <img src="<%= product.image%>" alt="">
+                                </div>
+
+                                <div class="product-gallery">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="product-inner">
+                                <h2 class="product-name"><%= product.name%></h2>
+                                <div role="tabpanel">
+                                   Price : <p><%= product.price%> VNĐ</p>
+                                    <ul class="product-tab" role="tablist">
+                                        <li aria-controls="home"><h1>Description</h1></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                            <p><%= product.description%></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="brands-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="brand-wrapper">
+                    <div class="brand-list">
+                        <img src="img/brand1.png" alt="">
+                        <img src="img/brand2.png" alt="">
+                        <img src="img/brand3.png" alt="">
+                        <img src="img/brand4.png" alt="">
+                        <img src="img/brand5.png" alt="">
+                        <img src="img/brand6.png" alt="">
+                        <img src="img/brand1.png" alt="">
+                        <img src="img/brand2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End brands area -->
+
+<%- include ('../partial/footer') %>
+
+
+<%- include ('../partial/javascript') %>
+
+</body>
+</html>
+
