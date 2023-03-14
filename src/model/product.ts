@@ -15,5 +15,9 @@ export class Product {
     public description: string;
     @Column({type: 'int'})
     public quantity: number;
+    @Column({type: 'int'})
+    public id_category: number;
+    @Column({type: 'int'})
+    public id_status: number;
 
 }

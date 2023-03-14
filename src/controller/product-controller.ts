@@ -38,9 +38,7 @@ export class ProductController {
     };
     editP = async (req: Request, res: Response) => {
         await this.productService.editProduct(req, res)
-
     };
-
     deleteP = async (req: Request, res: Response) => {
         await this.productService.deleteProduct(req, res)
     };
@@ -53,10 +51,9 @@ export class ProductController {
     };
     searchP= async (req: Request, res: Response) => {
         let products = await this.productService.searchProduct(req.body.name);
-        res.render('product/searchP', {
-            product: products
+        res.render('product/list', {
+            listProduct: products
         })
-
     };
 }
 

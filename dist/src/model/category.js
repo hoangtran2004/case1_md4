@@ -16,13 +16,13 @@ let Category = class Category {
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)({ type: 'int' }),
     __metadata("design:type", Number)
-], Category.prototype, "id", void 0);
+], Category.prototype, "id_category", void 0);
 __decorate([
     (0, typeorm_1.Column)({ type: 'varchar' }),
     __metadata("design:type", String)
 ], Category.prototype, "name", void 0);
 Category = __decorate([
-    (0, typeorm_1.Entity)({ name: 'category' })
+    (0, typeorm_1.Entity)()
 ], Category);
 exports.Category = Category;
 //# sourceMappingURL=category.js.map

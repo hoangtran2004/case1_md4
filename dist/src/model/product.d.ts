@@ -5,4 +5,6 @@ export declare class Product {
     image: string;
     description: string;
     quantity: number;
+    id_category: number;
+    id_status: number;
 }

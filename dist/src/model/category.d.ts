@@ -1,4 +1,4 @@
 export declare class Category {
-    readonly id: number;
+    readonly id_category: number;
     name: string;
 }

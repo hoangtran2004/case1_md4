@@ -1,0 +1,1 @@
+{"version":3,"file":"status.js","sourceRoot":"","sources":["../../../src/model/status.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA,qCAA+D;AAGxD,IAAM,MAAM,GAAZ,MAAM,MAAM;CAMlB,CAAA;AAJG;IAAC,IAAA,gCAAsB,EAAC,EAAC,IAAI,EAAE,KAAK,EAAC,CAAC;;yCACJ;AAClC;IAAC,IAAA,gBAAM,EAAC,EAAC,IAAI,EAAE,SAAS,EAAC,CAAC;;sCACL;AALZ,MAAM;IADlB,IAAA,gBAAM,GAAE;GACI,MAAM,CAMlB;AANY,wBAAM"}

@@ -53,9 +53,9 @@
                 <div class="latest-product">
                     <div class="single-sidebar" style="width: 300px">
                         <h2 class="sidebar-title">Search Products</h2>
-                        <form action="" method="post">
+                        <form method="post" enctype="multipart/form-data">
                             <input type="text" placeholder="Search products..." name="name">
-                            <button type="submit" value="search">Search</button>
+                            <button type="submit" >Search</button>
                         </form>
                     </div>
                     <h2 class="section-title">List Products</h2>
@@ -64,7 +64,7 @@
                             <div class="single-product">
                                 <div class="product-f-image">
                                     <img src="<%= product.image %>" alt="">
-                                    <div class="product-hover">
+                                    <div class="product-hover" style="height: 260px">
                                         <a href="/update/<%= product.id %>" class="add-to-cart-link"><i
                                                     class="fa fa-shopping-cart"></i>Update</a>
                                         <a href="/detail/<%= product.id %>" class="view-details-link"><i
@@ -72,9 +72,8 @@
                                             See details</a>
                                     </div>
                                 </div>
-
-                                <h2><%= product.name %></h2>
-                                <a href="/delete/<%= product.id %>" class="btn btn-danger"><h6>Delete</h6></a>
+                                     <h2><%= product.name %></h2>
+                                     <a href="/delete/<%= product.id %>" class="btn btn-danger" style="height: 30px"><h6>Delete</h6></a>
                                 <div class="product-carousel-price">
                                     <p>
                                         <% product.price %>

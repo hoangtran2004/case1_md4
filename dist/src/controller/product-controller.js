@@ -39,8 +39,8 @@ class ProductController {
         };
         this.searchP = async (req, res) => {
             let products = await this.productService.searchProduct(req.body.name);
-            res.render('product/searchP', {
-                product: products
+            res.render('product/list', {
+                listProduct: products
             });
         };
         this.productService = new product_service_1.ProductService();
